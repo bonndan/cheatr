@@ -92,5 +92,24 @@ func initTopics() map[string]Topic {
 	}
 	topics["tmux"] = tmux
 
+	mutt := Topic {
+		title: "mutt",
+		cheats: map[string]string {
+			"c": "change box",
+			"m": "new message",
+		},
+	}
+	topics["mutt"] = mutt
+
+	various := Topic {
+		title: "various",
+		cheats: map[string]string {
+			"tig": "git (d=diff)",
+			"wego": "weather (github.com/schachmat/wego)",
+			"gcalcli": "calendar",
+		},
+	}
+	topics["var"] = various
+
 	return topics
 }
