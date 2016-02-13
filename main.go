@@ -88,6 +88,7 @@ func initTopics() map[string]Topic {
 			"^b n": "next",
 			"^b p": "previous",
 			"^b hjkl": "move in direction to split",
+            "^b &": "kill window",
 		},
 	}
 	topics["tmux"] = tmux
@@ -97,6 +98,12 @@ func initTopics() map[string]Topic {
 		cheats: map[string]string {
 			"c": "change box",
 			"m": "new message",
+            "y": "send",
+            "i": "quit edit mode",
+            "r": "reply",
+            "p": "menu for gpg",
+            "$": "sync",
+            "g": "reply all",
 		},
 	}
 	topics["mutt"] = mutt
@@ -110,6 +117,17 @@ func initTopics() map[string]Topic {
 		},
 	}
 	topics["var"] = various
+
+	cmus := Topic {
+		title: "cmus",
+		cheats: map[string]string {
+			"3": "playlist",
+			"-/+": "volume",
+			"c": "pause",
+			"x": "play",
+		},
+	}
+	topics["cmus"] = cmus
 
 	return topics
 }
