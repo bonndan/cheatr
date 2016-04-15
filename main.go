@@ -104,6 +104,7 @@ func initTopics() map[string]Topic {
             "p": "menu for gpg",
             "$": "sync",
             "g": "reply all",
+            "v": "view message attachments, s to save",
 		},
 	}
 	topics["mutt"] = mutt
